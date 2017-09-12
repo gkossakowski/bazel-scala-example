@@ -1,14 +1,15 @@
 workspace(name = "scala_example")
 
-rules_scala_version="031e73c02e0d8bfcd06c6e4086cdfc7f3a3061a8" # update this as needed
+BAZEL_VERSION = "0.5.2"
+BAZEL_VERSION_SHA = "2418c619bdd44257a170b85b9d2ecb75def29e751b725e27186468ada2e009ea"
 
-http_archive(
-             name = "io_bazel_rules_scala",
-             url = "https://github.com/bazelbuild/rules_scala/archive/%s.zip"%rules_scala_version,
-             type = "zip",
-             strip_prefix= "rules_scala-%s" % rules_scala_version
-             )
 
+rules_scala_version="bca505cf917b39a75f808d56afadf714a87b3a88" # update this as needed
+git_repository(
+    name = "io_bazel_rules_scala",
+    remote = "git://github.com/gkossakowski/rules_scala",
+    commit = "bca505cf917b39a75f808d56afadf714a87b3a88"
+)
 load("@io_bazel_rules_scala//scala:scala.bzl", "scala_repositories")
 scala_repositories()
 
