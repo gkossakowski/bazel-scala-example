@@ -16,5 +16,4 @@ scala_repositories()
 # use bazel-deps to manage transitive maven dependencies
 # https://github.com/johnynek/bazel-deps
 load("//3rdparty:workspace.bzl", "maven_dependencies")
-load("//3rdparty:maven_load.bzl", "maven_load")
-maven_dependencies(maven_load)
+maven_dependencies()
