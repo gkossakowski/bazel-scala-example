@@ -13,6 +13,8 @@ git_repository(
 load("@io_bazel_rules_scala//scala:scala.bzl", "scala_repositories")
 scala_repositories()
 
+# use bazel-deps to manage transitive maven dependencies
+# https://github.com/johnynek/bazel-deps
 load("//3rdparty:workspace.bzl", "maven_dependencies")
-load("//3rdparty:load.bzl", "declare_maven")
-maven_dependencies(declare_maven)
+load("//3rdparty:maven_load.bzl", "maven_load")
+maven_dependencies(maven_load)
