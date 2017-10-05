@@ -1,7 +1,7 @@
 workspace(name = "scala_example")
 
-BAZEL_VERSION = "0.5.2"
-BAZEL_VERSION_SHA = "2418c619bdd44257a170b85b9d2ecb75def29e751b725e27186468ada2e009ea"
+BAZEL_VERSION = "0.5.4"
+BAZEL_VERSION_SHA = "2157b05309614d6af0e4bbc6065987aede590822634a0522161f3af5d647abc9"
 
 
 rules_scala_version="bca505cf917b39a75f808d56afadf714a87b3a88" # update this as needed
