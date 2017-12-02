@@ -6,7 +6,7 @@ echo -ne "\033[0m"
 
 # update this to move to later versions of this repo:
 # https://github.com/johnynek/bazel-deps
-GITSHA="09573ab02b352cc73ace383a9539b56f2cd75860"
+GITSHA="aad33e40cd2ce2400347e5db28b767e5d512a4fd"
 
 set -e
 
