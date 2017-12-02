@@ -1,4 +1,9 @@
 dependencies:
+  com.google.guava:
+    guava:
+      lang: java
+      version: "21.0"
+
   com.twitter:
     algebird-core:
       lang: scala
