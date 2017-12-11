@@ -1,7 +1,7 @@
-java_library(
+java_import(
     name = "guava",
-    exports = [
-        "//external:jar/com/google/guava/guava"
+    jars = [
+        "@com_google_guava_guava//jar:file"
     ],
     visibility = [
         "//visibility:public"
