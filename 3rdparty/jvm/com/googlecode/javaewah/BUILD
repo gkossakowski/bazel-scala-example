@@ -1,6 +1,6 @@
-java_library(
+java_import(
     name = "JavaEWAH",
-    exports = [
+    jars = [
         "//external:jar/com/googlecode/javaewah/JavaEWAH"
     ],
     visibility = [

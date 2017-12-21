@@ -6,7 +6,7 @@ echo -ne "\033[0m"
 
 # update this to move to later versions of this repo:
 # https://github.com/johnynek/bazel-deps
-GITSHA="aad33e40cd2ce2400347e5db28b767e5d512a4fd"
+GITSHA="4077b694eb32426b948468026129d7827b96d0f2"
 
 set -e
 
@@ -22,7 +22,7 @@ BAZEL_DEPS_WORKSPACE="$BAZEL_DEPS_REPO_PATH/WORKSPACE"
 if [ ! -f "$BAZEL_DEPS_WORKSPACE" ]; then
   mkdir -p $BAZEL_DEPS_PATH
   cd $BAZEL_DEPS_PATH
-  git clone https://github.com/johnynek/bazel-deps.git
+  git clone /Users/gkk/stripe/bazel-deps
 fi
 
 cd $BAZEL_DEPS_REPO_PATH

@@ -1,7 +1,7 @@
 java_import(
     name = "guava",
     jars = [
-        "@com_google_guava_guava//jar:file"
+        "//external:jar/com/google/guava/guava"
     ],
     visibility = [
         "//visibility:public"
