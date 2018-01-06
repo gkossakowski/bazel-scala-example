@@ -13,8 +13,8 @@ scala_import(
 scala_library(
     name = "example-lib-bar",
     srcs = ["Xyz.scala"],
-    deps = [":intermediate"],
-    exports = [":intermediate"],
+    deps = [":intermediate", "//example-thrift"],
+    exports = [":intermediate", "//example-thrift"],
     visibility = ["//visibility:public"],
 )
 

@@ -1,5 +1,5 @@
 options:
-  languages: [ "java", "scala:2.11.12" ]
+  languages: [ "java", "scala:2.11.8" ]
   versionConflictPolicy: highest
 
 dependencies:
@@ -12,3 +12,14 @@ dependencies:
     algebird-core:
       lang: scala
       version: "0.12.1"
+    scrooge:
+      exports:
+        - "org.apache.thrift:libthrift"
+      lang: scala
+      modules: [ "core", "generator", "serializer" ]
+      version: "4.6.0"
+
+  org.apache.thrift:
+    libthrift:
+      lang: java
+      version: "0.8.0"
