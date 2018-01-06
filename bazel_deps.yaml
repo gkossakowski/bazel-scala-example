@@ -1,9 +1,13 @@
+options:
+  languages: [ "java", "scala:2.11.12" ]
+  versionConflictPolicy: highest
+
 dependencies:
   com.google.guava:
     guava:
       lang: java
       version: "21.0"
-
+  
   com.twitter:
     algebird-core:
       lang: scala

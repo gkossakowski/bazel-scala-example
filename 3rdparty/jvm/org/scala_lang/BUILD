@@ -1,6 +1,6 @@
-java_import(
+java_library(
     name = "scala_library",
-    jars = [
+    exports = [
         "//external:jar/org/scala_lang/scala_library"
     ],
     visibility = [
@@ -10,9 +10,9 @@ java_import(
 
 
 
-java_import(
+java_library(
     name = "scala_reflect",
-    jars = [
+    exports = [
         "//external:jar/org/scala_lang/scala_reflect"
     ],
     visibility = [
