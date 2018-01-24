@@ -1,13 +1,13 @@
 workspace(name = "scala_example")
 
-BAZEL_VERSION = "0.8.1"
-BAZEL_VERSION_SHA = "dfd0761e0b7e36c1d74c928ad986500c905be5ebcfbc29914d574af1db7218cf"
+BAZEL_VERSION = "0.9.0"
+BAZEL_VERSION_SHA = "efb28fed4ffcfaee653e0657f6500fc4cbac61e32104f4208da385676e76312a"
 
 
 git_repository(
     name = "io_bazel_rules_scala",
     remote = "git://github.com/bazelbuild/rules_scala",
-    commit = "c79adc9d32a5f5ed7e42c7408f65d8eec7c87a6f"
+    commit = "375b34af68915ab16b69edf66a472b1be96a1381"
 )
 # if you're hacking rules_Scala, use local_repository
 # local_repository(
@@ -16,6 +16,8 @@ git_repository(
 # 	)
 load("@io_bazel_rules_scala//scala:scala.bzl", "scala_repositories")
 scala_repositories()
+load("@io_bazel_rules_scala//scala:toolchains.bzl", "scala_register_toolchains")
+scala_register_toolchains()
 
 # use bazel-deps to manage transitive maven dependencies
 # https://github.com/johnynek/bazel-deps
