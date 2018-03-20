@@ -1,6 +1,6 @@
 workspace(name = "scala_example")
 
-BAZEL_VERSION = "0.9.0"
+BAZEL_VERSION = "0.11.1"
 BAZEL_VERSION_SHA = "efb28fed4ffcfaee653e0657f6500fc4cbac61e32104f4208da385676e76312a"
 
 
